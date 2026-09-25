@@ -1,20 +1,32 @@
 {
   "name": "@pipeworx/mcp-worms",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "WoRMS (World Register of Marine Species) MCP — keyless.",
   "type": "module",
   "main": "src/index.ts",
   "types": "src/index.ts",
+  "bin": {
+    "mcp-worms": "bin/cli.js"
+  },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "worms"],
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pipeworx-io/mcp-worms"
+    "url": "git+https://github.com/pipeworx-io/mcp-worms.git"
   },
   "scripts": {
     "typecheck": "tsc --noEmit"
   },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "tsx": "^4.19.0"
+  },
   "devDependencies": {
-    "typescript": "^5.7.0"
+    "typescript": "^5.9.3",
+    "@cloudflare/workers-types": "^4.20260405.1"
+  },
+  "pipeworx": {
+    "sourceHash": "v1-4458eae7763d50ac788e865ff9d8b611f435777616e0c0550adba6b4cd5b76b3",
+    "sourceCommit": "b0fb3c31386cf0256dcf1e2f1b3440435a87ec35"
   }
 }

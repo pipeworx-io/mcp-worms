@@ -3,7 +3,7 @@
   "name": "io.github.pipeworx-io/worms",
   "title": "Worms",
   "description": "WoRMS (World Register of Marine Species) MCP — keyless.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "websiteUrl": "https://pipeworx.io/packs/worms",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-worms",
