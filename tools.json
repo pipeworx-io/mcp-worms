@@ -1,0 +1,64 @@
+[
+  {
+    "name": "search_species",
+    "description": "Resolve a marine species or genus name to its WoRMS AphiaID, accepted name, authority, status (accepted/unaccepted), rank, and high-level classification (kingdom/family/genus). WoRMS is the authoritative world register of marine species. Keyless.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Scientific name to look up, e.g. \"Orcinus orca\" or \"Octopus\"."
+        },
+        "fuzzy": {
+          "type": "boolean",
+          "description": "Fuzzy/like matching (LIKE substring). Default false (exact)."
+        },
+        "marine_only": {
+          "type": "boolean",
+          "description": "Restrict to marine taxa. Default true."
+        }
+      },
+      "required": [
+        "name"
+      ]
+    }
+  },
+  {
+    "name": "get_classification",
+    "description": "Walk the full taxonomic lineage (root → tip) for a WoRMS AphiaID: returns a flat ordered array of { rank, name, aphia_id } from superdomain down to the taxon itself. Keyless.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "aphia_id": {
+          "type": [
+            "number",
+            "string"
+          ],
+          "description": "WoRMS AphiaID, e.g. 137102."
+        }
+      },
+      "required": [
+        "aphia_id"
+      ]
+    }
+  },
+  {
+    "name": "get_common_names",
+    "description": "Get common (vernacular) names for a WoRMS AphiaID across languages. Keyless.",
+    "inputSchema": {
+      "type": "object",
+      "properties": {
+        "aphia_id": {
+          "type": [
+            "number",
+            "string"
+          ],
+          "description": "WoRMS AphiaID, e.g. 137102."
+        }
+      },
+      "required": [
+        "aphia_id"
+      ]
+    }
+  }
+]
