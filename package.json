@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-worms",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "WoRMS (World Register of Marine Species) MCP — keyless.",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "worms",
     "gatewaySlug": "worms",
-    "sourceHash": "v1-2afc0191095428c3506929a949ba4ccc792cd25d7c9393567dd9254f65c10eab",
-    "sourceCommit": "98853f34516646cb7c4c1460f09249b262c0269e"
+    "sourceHash": "v1-e3b7cd4cc8db3d71688c10ee951335ed4b9f5d7b30e27fa8b985769ee6cd1ddb",
+    "sourceCommit": "78b905fa3a6880dfb85c79150f4bffe8cf50ef00"
   }
 }
